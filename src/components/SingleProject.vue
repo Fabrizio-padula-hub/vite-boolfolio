@@ -20,15 +20,17 @@ export default{
 
     <div class="card my-3">
         <div class="card-body">
-            <h5 class="card-title">{{ projectInfo.name }}</h5>
+            <h4 class="card-title"><strong>{{ projectInfo.name }}</strong></h4>
             <div v-if="projectInfo.type">
                 <strong>tipo</strong>: {{ projectInfo.type.name }}
             </div>
             <div v-if="projectInfo.technologies.length > 0">
-                <strong>Tecnologie</strong>:
+                <strong>Tecnologie</strong><i class="fa-solid fa-gears"></i>:
+                
                 <span v-for="tech in projectInfo.technologies">
                     {{ tech.name }}
                 &nbsp</span>
+
             </div>
             <p v-if="projectInfo.summary" class="card-text mt-4">{{ truncateText(projectInfo.summary) }}</p>
             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -37,3 +39,18 @@ export default{
 
   
 </template>
+
+<style scoped lang="scss">
+
+.card {
+
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+
+    p{
+        color: rgb(148, 148, 148);
+    }
+}
+
+</style>
