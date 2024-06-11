@@ -1,12 +1,20 @@
 <script>
-export default{
+import ProjectList from './components/ProjectList.vue';
 
+export default{
+    components:{
+        ProjectList,
+    }
 }
 </script>
 
 
 <template>
-    <h1>prova</h1>
+    
+    <div class="container">
+        <ProjectList></ProjectList>
+    </div>
+    
 </template>
 
 
