@@ -1,14 +1,11 @@
 <script>
-import ProjectList from '../components/ProjectList.vue';
 
 export default{
     name: 'AppHome',
-    components:{
-        ProjectList
-    }
+    
 }
 </script>
 
 <template>
-    <ProjectList></ProjectList>
+    <h4>Home</h4>
 </template>

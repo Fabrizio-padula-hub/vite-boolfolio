@@ -15,16 +15,13 @@ export default {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <router-link class="nav-link active" aria-current="page" :to="{ name: 'home' }">Home</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <router-link class="nav-link" :to="{ name: 'about' }">About</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <router-link class="nav-link" :to="{ name: 'projects' }">Projects</router-link>
                     </li>
                 </ul>
             </div>
